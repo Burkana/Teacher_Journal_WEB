@@ -1,0 +1,1649 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Elektronen.css">
+    <script src="Table.js"></script>
+    <title>Дневник на 12А</title>
+    <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
+</head>
+<body>
+    <header>
+    <div class="Nav">
+    
+        <a href="index.html">Електронен дневник</a>
+     <p>Професионална гимназия по електроника</p>
+    <span></span>
+    </div>
+</header>
+
+
+<div class="All">
+<div class="leftTable">
+
+
+  
+
+    <div class="ClassRow">
+     <b><p>Дневници</p></b>
+     
+     <p>-12 клас-
+     <a href="12A.html"><b>А</b></a>
+     <a href="12B.html">Б</a>
+     <a href="12V.html">В</a>
+     <a href="12G.html">Г</a>
+     </p>
+    </div>
+
+     
+
+   
+        <div class="Predmet">
+           <b><p>Предмети</p></b>
+          <button onclick="toggleVisibilityP('Математика')">Математика</button><br>
+          <button onclick="toggleVisibilityP('Български език и литература')">Български език и литература</button><br>
+          <button onclick="toggleVisibilityP('Немски език')">Немски език</button><br>
+          <button onclick="toggleVisibilityP('Чужд език по професия')">Чужд език по професия</button><br>
+          <button onclick="toggleVisibilityP('Гражданско образование')">Гражданско образование</button><br>
+          <button onclick="toggleVisibilityP('Производствена практика')">Производствена практика</button><br>
+          
+          <!-- Write your comments here <button onclick="toggleVisibilityP('Среден успех')">Среден успех</button> -->
+          <button onclick="restart()">Премахнете всички оценки</button>
+        </div>
+   </div>
+
+   
+<div class="Table">
+ <p >12А Клас - <span id="currentSubject">Математика</span></p>
+<table id="nameNumberTable">
+        <thead>
+          <tr>
+             <th rowspan="2">Ученици</th>
+             <th colspan="6" rowspan="1" id="Predmet">Първи срок</th>
+             <th colspan="6" rowspan="1" id="Predmet">Втори срок</th>
+             <th rowspan="2" id="Predmet">Годишна</th>
+          </tr>  
+           <tr> 
+                <th id="Predmet">09</th>
+                <th id="Predmet">10</th>
+                <th id="Predmet">11</th>
+                <th id="Predmet">12</th>
+                <th id="Predmet">01</th>
+                <th id="Predmet">Срочна</th>
+            <!--<th id="PredmetSr">Среден успех за всеки предмет</th>-->
+                
+                <th id="Predmet">02</th>
+                <th id="Predmet">03</th>
+                <th id="Predmet">04</th>
+                <th id="Predmet">05</th>
+                <th id="Predmet">06</th>
+                <th id="Predmet">Срочна</th>
+                <!--<th id="PredmetSr">Среден успех за всеки предмет</th>-->
+                <!--<th id="PredmetSr">Годишна</th>-->
+                
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <th>1. Име</th>
+              
+            <td id="PredmetM" ><input id="row1_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number4"  type="number" min="2" max="6"></td>
+
+        
+            
+
+            <td id="PredmetBg" ><input id="row1_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row1_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row1_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row1_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row1_number9"  type="number" min="2" max="6"></td>
+            
+        
+
+            <td id="PredmetNe" ><input id="row1_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row1_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row1_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row1_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row1_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row1_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row1_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row1_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row1_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row1_number19"  type="number" min="2" max="6"></td>
+
+            
+
+            <td id="PredmetGo" ><input id="row1_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row1_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row1_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row1_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row1_number24"  type="number" min="2" max="6"></td>
+
+
+            <td id="PredmetPp" ><input id="row1_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row1_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row1_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row1_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row1_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row1_Average1" readonly></td>  
+
+            
+            <td id="PredmetM" ><input id="row1_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row1_number34"  type="number" min="2" max="6"></td>
+
+
+            <td id="PredmetBg"><input id="row1_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row1_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row1_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row1_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row1_number39"  type="number" min="2" max="6"></td>
+
+
+            <td id="PredmetNe"><input id="row1_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row1_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row1_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row1_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row1_number44"  type="number" min="2" max="6"></td>
+
+      
+
+            <td id="PredmetEp"><input id="row1_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row1_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row1_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row1_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row1_number49"  type="number" min="2" max="6"></td>
+             
+  
+
+            <td id="PredmetGo"><input id="row1_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row1_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row1_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row1_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row1_number54"  type="number" min="2" max="6"></td>
+
+  
+            <td id="PredmetPp"><input id="row1_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row1_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row1_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row1_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row1_number59"  type="number" min="2" max="6"></td>
+            <td ><input id="row1_Average2" readonly></td>
+           
+
+            
+           
+            <td ><input id="row1_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>2. Име</th>
+            <td id="PredmetM" ><input id="row2_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row2_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row2_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row2_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row2_number4"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row2_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row2_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row2_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row2_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row2_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row2_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM"><input id="row2_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM"><input id="row2_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM"><input id="row2_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM"><input id="row2_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM"><input id="row2_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row2_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row2_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row2_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row2_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row2_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row2_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row2_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row2_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row2_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row2_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row2_Average2" readonly></td> 
+
+            <td><input id="row2_Average3" readonly></td>
+            
+        </tr>
+        <tr>
+            <th>3. Име</th>
+            <td id="PredmetM" ><input id="row3_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row3_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row3_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row3_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row3_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row3_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row3_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row3_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row3_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row3_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row3_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row3_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row3_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row3_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row3_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row3_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row3_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row3_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row3_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row3_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row3_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row3_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row3_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row3_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row3_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row3_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row3_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row3_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row3_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row3_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row3_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row3_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row3_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row3_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row3_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row3_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row3_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row3_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row3_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row3_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row3_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row3_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row3_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row3_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row3_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row3_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row3_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row3_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row3_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row3_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row3_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row3_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row3_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row3_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row3_Average2" readonly></td>
+         
+            <td><input id="row3_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>4. Име</th>
+            <td id="PredmetM" ><input id="row4_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row4_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row4_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row4_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row4_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row4_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row4_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row4_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row4_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row4_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row4_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row4_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row4_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row4_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row4_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row4_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row4_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row4_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row4_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row4_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row4_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row4_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row4_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row4_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row4_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row4_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row4_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row4_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row4_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row4_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row4_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row4_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row4_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row4_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row4_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row4_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row4_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row4_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row4_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row4_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row4_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row4_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row4_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row4_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row4_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row4_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row4_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row4_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row4_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row4_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row4_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row4_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row4_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row4_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row4_Average2" readonly></td>
+            <td><input id="row4_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>5. Име</th>
+            <td id="PredmetM" ><input id="row5_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row5_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row5_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row5_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row5_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row5_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row5_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row5_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row5_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row5_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row5_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row5_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row5_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row5_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row5_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row5_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row5_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row5_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row5_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row5_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row5_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row5_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row5_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row5_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row5_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row5_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row5_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row5_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row5_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row5_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row5_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row5_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row5_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row5_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row5_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row5_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row5_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row5_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row5_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row5_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row5_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row5_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row5_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row5_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row5_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row5_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row5_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row5_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row5_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row5_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row5_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row5_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row5_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row5_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row5_Average2" readonly></td>
+         
+            <td><input id="row5_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>6. Име</th>
+            <td id="PredmetM" ><input id="row6_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row6_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row6_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row6_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row6_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row6_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row6_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row6_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row6_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row6_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row6_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row6_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row6_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row6_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row6_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row6_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row6_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row6_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row6_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row6_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row6_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row6_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row6_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row6_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row6_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row6_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row6_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row6_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row6_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row6_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row6_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row6_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row6_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row6_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row6_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row6_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row6_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row6_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row6_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row6_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row6_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row6_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row6_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row6_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row6_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row6_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row6_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row6_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row6_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row6_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row6_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row6_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row6_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row6_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row6_Average2" readonly></td>
+           <td><input id="row6_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>7. Име</th>
+            <td id="PredmetM" ><input id="row7_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row7_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row7_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row7_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row7_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row7_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row7_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row7_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row7_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row7_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row7_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row7_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row7_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row7_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row7_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row7_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row7_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row7_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row7_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row7_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row7_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row7_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row7_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row7_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row7_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row7_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row7_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row7_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row7_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row7_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row7_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row7_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row7_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row7_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row7_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row7_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row7_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row7_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row7_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row7_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row7_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row7_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row7_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row7_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row7_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row7_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row7_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row7_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row7_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row7_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row7_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row7_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row7_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row7_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row7_Average2" readonly></td>
+            <td><input id="row7_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>8. Име</th>
+            <td id="PredmetM" ><input id="row8_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row8_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row8_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row8_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row8_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row8_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row8_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row8_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row8_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row8_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row8_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row8_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row8_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row8_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row8_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row8_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row8_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row8_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row8_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row8_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row8_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row8_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row8_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row8_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row8_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row8_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row8_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row8_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row8_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row8_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row8_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row8_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row8_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row8_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row8_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row8_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row8_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row8_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row8_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row8_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row8_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row8_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row8_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row8_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row8_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row8_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row8_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row8_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row8_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row8_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row8_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row8_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row8_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row8_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row8_Average2" readonly></td>
+            <td><input id="row8_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>9. Име</th>
+            <td id="PredmetM" ><input id="row9_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row9_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row9_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row9_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row9_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row9_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row9_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row9_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row9_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row9_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row9_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row9_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row9_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row9_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row9_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row9_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row9_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row9_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row9_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row9_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row9_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row9_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row9_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row9_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row9_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row9_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row9_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row9_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row9_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row9_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row9_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row9_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row9_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row9_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row9_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row9_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row9_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row9_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row9_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row9_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row9_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row9_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row9_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row9_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row9_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row9_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row9_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row9_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row9_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row9_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row9_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row9_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row9_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row9_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row9_Average2" readonly></td>
+            <td><input id="row9_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>10. Име</th>
+            <td id="PredmetM" ><input id="row10_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row10_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row10_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row10_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row10_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row10_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row10_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row10_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row10_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row10_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row10_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row10_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row10_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row10_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row10_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row10_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row10_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row10_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row10_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row10_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row10_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row10_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row10_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row10_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row10_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row10_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row10_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row10_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row10_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row10_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row10_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row10_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row10_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row10_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row10_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row10_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row10_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row10_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row10_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row10_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row10_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row10_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row10_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row10_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row10_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row10_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row10_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row10_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row10_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row10_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row10_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row10_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row10_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row10_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row10_Average2" readonly></td>
+            <td><input id="row10_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>11. Име</th>
+            <td id="PredmetM" ><input id="row11_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row11_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row11_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row11_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row11_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row11_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row11_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row11_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row11_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row11_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row11_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row11_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row11_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row11_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row11_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row11_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row11_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row11_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row11_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row11_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row11_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row11_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row11_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row11_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row11_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row11_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row11_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row11_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row11_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row11_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row11_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row11_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row11_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row11_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row11_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row11_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row11_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row11_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row11_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row11_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row11_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row11_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row11_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row11_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row11_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row11_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row11_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row11_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row11_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row11_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row11_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row11_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row11_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row11_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row11_Average2" readonly></td>
+            <td><input id="row11_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>12. Име</th>
+            <td id="PredmetM" ><input id="row12_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row12_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row12_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row12_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row12_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row12_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row12_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row12_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row12_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row12_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row12_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row12_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row12_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row12_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row12_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row12_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row12_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row12_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row12_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row12_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row12_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row12_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row12_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row12_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row12_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row12_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row12_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row12_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row12_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row12_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row12_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row12_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row12_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row12_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row12_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row12_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row12_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row12_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row12_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row12_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row12_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row12_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row12_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row12_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row12_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row12_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row12_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row12_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row12_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row12_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row12_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row12_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row12_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row12_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row12_Average2" readonly></td>
+            <td><input id="row12_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>13. Име</th>
+            <td id="PredmetM" ><input id="row13_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row13_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row13_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row13_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row13_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row13_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row13_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row13_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row13_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row13_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row13_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row13_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row13_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row13_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row13_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row13_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row13_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row13_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row13_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row13_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row13_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row13_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row13_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row13_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row13_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row13_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row13_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row13_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row13_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row13_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row13_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row13_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row13_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row13_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row13_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row13_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row13_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row13_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row13_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row13_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row13_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row13_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row13_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row13_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row13_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row13_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row13_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row13_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row13_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row13_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row13_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row13_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row13_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row13_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row13_Average2" readonly></td>
+            <td><input id="row13_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>14. Име</th>
+            <td id="PredmetM" ><input id="row14_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row14_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row14_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row14_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row14_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row14_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row14_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row14_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row14_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row14_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row14_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row14_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row14_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row14_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row14_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row14_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row14_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row14_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row14_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row14_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row14_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row14_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row14_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row14_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row14_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row14_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row14_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row14_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row14_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row14_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row14_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row14_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row14_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row14_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row14_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row14_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row14_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row14_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row14_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row14_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row14_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row14_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row14_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row14_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row14_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row14_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row14_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row14_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row14_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row14_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row14_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row14_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row14_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row14_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row14_Average2" readonly></td>
+            <td><input id="row14_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>15. Име</th>
+            <td id="PredmetM" ><input id="row15_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row15_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row15_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row15_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row15_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row15_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row15_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row15_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row15_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row15_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row15_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row15_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row15_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row15_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row15_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row15_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row15_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row15_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row15_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row15_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row15_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row15_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row15_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row15_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row15_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row15_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row15_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row15_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row15_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row15_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row15_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row15_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row15_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row15_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row15_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row15_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row15_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row15_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row15_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row15_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row15_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row15_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row15_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row15_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row15_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row15_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row15_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row15_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row15_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row15_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row15_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row15_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row15_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row15_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row15_Average2" readonly></td>
+            <td><input id="row15_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>16. Име</th>
+            <td id="PredmetM" ><input id="row16_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row16_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row16_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row16_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row16_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row16_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row16_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row16_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row16_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row16_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row16_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row16_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row16_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row16_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row16_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row16_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row16_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row16_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row16_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row16_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row16_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row16_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row16_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row16_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row16_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row16_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row16_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row16_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row16_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row16_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row16_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row16_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row16_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row16_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row16_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row16_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row16_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row16_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row16_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row16_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row16_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row16_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row16_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row16_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row16_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row16_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row16_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row16_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row16_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row16_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row16_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row16_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row16_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row16_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row16_Average2" readonly></td>
+            <td><input id="row16_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>17. Име</th>
+            <td id="PredmetM" ><input id="row17_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row17_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row17_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row17_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row17_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row17_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row17_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row17_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row17_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row17_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row17_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row17_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row17_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row17_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row17_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row17_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row17_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row17_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row17_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row17_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row17_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row17_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row17_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row17_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row17_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row17_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row17_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row17_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row17_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row17_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row17_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row17_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row17_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row17_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row17_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row17_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row17_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row17_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row17_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row17_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row17_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row17_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row17_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row17_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row17_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row17_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row17_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row17_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row17_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row17_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row17_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row17_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row17_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row17_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row17_Average2" readonly></td>
+            <td><input id="row17_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>18. Име</th>
+            <td id="PredmetM" ><input id="row18_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row18_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row18_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row18_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row18_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row18_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row18_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row18_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row18_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row18_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row18_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row18_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row18_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row18_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row18_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row18_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row18_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row18_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row18_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row18_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row18_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row18_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row18_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row18_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row18_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row18_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row18_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row18_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row18_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row18_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row18_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row18_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row18_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row18_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row18_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row18_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row18_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row18_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row18_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row18_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row18_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row18_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row18_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row18_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row18_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row18_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row18_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row18_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row18_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row18_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row18_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row18_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row18_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row18_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row18_Average2" readonly></td>
+            <td><input id="row18_Average3" readonly></td>
+        </tr>
+        <tr>
+            <th>19. Име</th>
+            <td id="PredmetM" ><input id="row19_number0"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number1"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number2"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number3"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number4"  type="number" min="2" max="6"></td>
+            
+
+            <td id="PredmetBg" ><input id="row19_number5"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row19_number6"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row19_number7"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row19_number8"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg" ><input id="row19_number9"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe" ><input id="row19_number10"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row19_number11"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row19_number12"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row19_number13"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe" ><input id="row19_number14"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp" ><input id="row19_number15"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row19_number16"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row19_number17"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row19_number18"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp" ><input id="row19_number19"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo" ><input id="row19_number20"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row19_number21"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row19_number22"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row19_number23"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo" ><input id="row19_number24"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp" ><input id="row19_number25"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row19_number26"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row19_number27"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row19_number28"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp" ><input id="row19_number29"  type="number" min="2" max="6"></td>
+            <td><input id="row19_Average1" readonly></td>
+         
+
+            
+            <td id="PredmetM" ><input id="row19_number30"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number31"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number32"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number33"  type="number" min="2" max="6"></td>
+            <td id="PredmetM" ><input id="row19_number34"  type="number" min="2" max="6"></td>
+            
+            <td id="PredmetBg"><input id="row19_number35"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row19_number36"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row19_number37"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row19_number38"  type="number" min="2" max="6"></td>
+            <td id="PredmetBg"><input id="row19_number39"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetNe"><input id="row19_number40"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row19_number41"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row19_number42"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row19_number43"  type="number" min="2" max="6"></td>
+            <td id="PredmetNe"><input id="row19_number44"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetEp"><input id="row19_number45"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row19_number46"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row19_number47"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row19_number48"  type="number" min="2" max="6"></td>
+            <td id="PredmetEp"><input id="row19_number49"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetGo"><input id="row19_number50"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row19_number51"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row19_number52"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row19_number53"  type="number" min="2" max="6"></td>
+            <td id="PredmetGo"><input id="row19_number54"  type="number" min="2" max="6"></td>
+
+            <td id="PredmetPp"><input id="row19_number55"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row19_number56"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row19_number57"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row19_number58"  type="number" min="2" max="6"></td>
+            <td id="PredmetPp"><input id="row19_number59"  type="number" min="2" max="6"></td>
+            <td><input id="row19_Average2" readonly></td>
+            <td><input id="row19_Average3" readonly></td>
+        </tr>
+        
+    
+
+         <tr>
+            <th>Среден успех на класа</th>
+            <td colspan="13">
+                <input id="OverallAverage" readonly> 
+            </td>
+          
+
+         </tr>
+    </tbody>
+  </table>
+ </div>
+</div>
+<footer>
+    <p>Направено от Burkana&#8482;</p>
+</footer>
+</body>
+</html>
